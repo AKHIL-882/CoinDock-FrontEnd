@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>| CoinDock | Dashboard </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://s2.coinmarketcap.com/static/cloud/img/TrendingIcon.png?_=e1b9691" rel="icon">
+  <link href="https://s2.coinmarketcap.com/static/cloud/img/TrendingIcon.png?_=e1b9691" rel="apple-touch-icon">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="https://s2.coinmarketcap.com/static/cloud/img/TrendingIcon.png?_=e1b9691" alt="">
+        <span class="d-none d-lg-block">CoinDock</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="https://st.depositphotos.com/2101611/4338/v/600/depositphotos_43381243-stock-illustration-male-avatar-profile-picture.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"> User Name </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#.html">
+                <i class="bi bi-person"></i>
+                <span>Add Wallets</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="fa fa-dedent"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#.html">
+          <i class="fa fa-list-alt"></i>
+          <span>Wallets</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#.html">
+          <i class="fa fa-sign-out"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="pagetitle mt-5000 container">
+      <div class="card p-3">
+        <h1>Dashboard</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">BTC</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Primary Currency</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Secondary Currency</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/USD.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Low Performer</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+
+
+                <div class="card-body">
+                  <h5 class="card-title">Reports <span>/Today</span></h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Sales',
+                          data: [31, 40, 28, 51, 42, 82, 56],
+                        }, {
+                          name: 'Revenue',
+                          data: [11, 32, 45, 32, 34, 52, 41]
+                        }, {
+                          name: 'Customers',
+                          data: [15, 11, 32, 18, 9, 24, 11]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+            
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+    
+                  <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+    
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      echarts.init(document.querySelector("#trafficChart")).setOption({
+                        tooltip: {
+                          trigger: 'item'
+                        },
+                        legend: {
+                          top: '5%',
+                          left: 'center'
+                        },
+                        series: [{
+                          name: 'Access From',
+                          type: 'pie',
+                          radius: ['40%', '70%'],
+                          avoidLabelOverlap: false,
+                          label: {
+                            show: false,
+                            position: 'center'
+                          },
+                          emphasis: {
+                            label: {
+                              show: true,
+                              fontSize: '18',
+                              fontWeight: 'bold'
+                            }
+                          },
+                          labelLine: {
+                            show: false
+                          },
+                          data: [{
+                              value: 1048,
+                              name: 'Search Engine'
+                            },
+                            {
+                              value: 735,
+                              name: 'Direct'
+                            },
+                            {
+                              value: 580,
+                              name: 'Email'
+                            },
+                            {
+                              value: 484,
+                              name: 'Union Ads'
+                            },
+                            {
+                              value: 300,
+                              name: 'Video Ads'
+                            }
+                          ]
+                        }]
+                      });
+                    });
+                  </script>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="pagetitle mt-5000 container">
+        <div class="card p-3">
+          <h1>Card <Section></Section></h1>
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Details</a></li>
+              <li class="breadcrumb-item active">Total</li>
+            </ol>
+          </nav>
+          <div class="card-block">
+            <div class="col-md-12 card p-3">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Logo</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="photo-box">
+                      <h6>Coins</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="col-md-12 card p-3">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Logo</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="photo-box">
+                      <h6>Coins</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="col-md-12 card p-3">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Logo</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="photo-box">
+                      <h6>Coins</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="photo-box">
+                      <h6>Dummy</h6>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card-block">
+          <div class="col-md-12 card p-3">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="photo-box">
+                    <h6>Logo</h6>
+                </div>
+              </div>
+              <div class="col-md-2">
+                  <div class="photo-box">
+                    <h6>Coins</h6>
+                  </div>
+              </div>
+              <div class="col-md-2">
+                <div class="photo-box">
+                    <h6>Dummy</h6>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="photo-box">
+                    <h6>Dummy</h6>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="photo-box">
+                    <h6>Dummy</h6>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="photo-box">
+                    <h6>Dummy</h6>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CoinDock</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    
+      Designed by <a href="https://sailssoftware.com/">Sails Software Solutions</a>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/apexcharts.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+  <script src="assets/js/echarts.min.js"></script>
+
+</body>
+
+</html>
